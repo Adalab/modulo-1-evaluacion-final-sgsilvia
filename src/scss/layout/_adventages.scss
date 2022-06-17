@@ -1,11 +1,11 @@
 .adventage {
   width: 100%;
-  padding-left: 100px;
 
   background-color: $colorGreyBackground;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 2fr 2fr;
+
   text-align: center;
   &__title {
     padding-top: 41px;

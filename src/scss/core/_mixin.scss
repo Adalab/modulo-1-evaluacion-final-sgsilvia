@@ -37,7 +37,7 @@
   line-height: 18px;
 }
 
-/*header*/
+/*main*/
 @mixin titleh3 {
   font-size: 20px;
   font-weight: 600;
@@ -48,4 +48,5 @@
   font-size: 16px;
   font-weight: normal;
   color: $colorTextBlue;
+  padding: 0 100px;
 }
