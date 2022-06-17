@@ -3,7 +3,16 @@
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
-@import 'layout/header';
+
 @import 'layout/footer';
 @import 'pages/index';
 */
+
+@import "core/reset";
+@import "core/variables";
+@import "core/mixin";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/aside";
+@import "layout/adventages";
+@import "core/responsive";

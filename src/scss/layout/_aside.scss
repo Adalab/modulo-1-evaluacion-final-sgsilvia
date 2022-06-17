@@ -1,0 +1,75 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  background-color: $colorfotterbackground;
+  &__send {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 63px;
+
+    background-color: $colorSendBackground;
+    width: 100%;
+    align-items: center;
+    &--foto {
+      padding-top: 60px;
+      justify-content: space-around;
+    }
+    &--title {
+      @include titleh2;
+      color: $colorTextWhite;
+    }
+
+    &--text {
+      @include textaside;
+      color: antiquewhite;
+    }
+    &--button {
+      width: 176px;
+      height: 48px;
+      text-align: center;
+      padding: 12px;
+      text-transform: capitalize;
+      color: $colorTextWhite;
+      font-weight: 600;
+      &--button:hover {
+        background-color: chartreuse;
+      }
+    }
+  }
+
+  &__enjoy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorGreyBackground;
+    width: 100%;
+    padding: 90px 0;
+
+    &--title {
+      @include titleh2;
+    }
+    &--text {
+      @include textaside;
+    }
+    &--button {
+      width: 176px;
+      height: 48px;
+      background-color: $colorfotterbackground;
+      text-decoration: none;
+      text-align: center;
+      padding: 12px;
+      text-transform: capitalize;
+      font-weight: 600;
+      color: $colorTextWhite;
+    }
+  }
+
+  &__container {
+    width: 100%;
+
+    &--foto {
+      width: 100%;
+    }
+  }
+}

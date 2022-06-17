@@ -1,0 +1,40 @@
+.adventage {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  background-color: $colorGreyBackground;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  text-align: center;
+  &__title {
+    padding-top: 41px;
+    padding-left: 45px;
+    padding-right: 47px;
+    font-size: 24px;
+    color: $colorTextBlue;
+    font-weight: 600;
+  }
+
+  &__want--title {
+    @include titleh3;
+  }
+  &__want--text {
+    @include maintext;
+  }
+
+  &__recycle--title {
+    @include titleh3;
+  }
+  &__recycle--text {
+    @include maintext;
+  }
+
+  &__guide--title {
+    @include titleh3;
+  }
+  &__guide--text {
+    @include maintext;
+  }
+}

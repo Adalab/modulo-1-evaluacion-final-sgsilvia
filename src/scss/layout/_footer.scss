@@ -1,0 +1,56 @@
+.footer {
+  padding: 56px 0;
+
+  background-color: $colorfotterbackground;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__shop {
+    @include container;
+    &--title {
+      @include titleF;
+    }
+    &--links {
+      @include links;
+    }
+  }
+
+  &__ours {
+    @include container;
+
+    &--title {
+      @include titleF;
+    }
+
+    &--links {
+      @include links;
+    }
+  }
+
+  &__contact {
+    @include links;
+    width: 13ch;
+
+    &--title {
+      @include titleF;
+    }
+
+    &--links {
+      @include links;
+    }
+
+    &--icon {
+      font-size: 24px;
+      padding-top: 10px;
+      padding-right: 7px;
+    }
+  }
+
+  &__arrowicon {
+    font-size: 24px;
+    color: $colorTextFooter;
+    position: absolute;
+    right: 28px;
+  }
+}
