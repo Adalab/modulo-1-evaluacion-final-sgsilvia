@@ -5,9 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  text-align: left;
 
   &__shop {
-    @include container;
     &--title {
       @include titleF;
     }
@@ -17,8 +18,6 @@
   }
 
   &__ours {
-    @include container;
-
     &--title {
       @include titleF;
     }
