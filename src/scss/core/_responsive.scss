@@ -1,16 +1,5 @@
 @media all and (min-width: 900px) {
-  .footer {
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-  }
-}
-
-@media all and (min-width: 1728px) {
-}
-
-/* adventage*/
-@media all and (min-width: 900px) {
+  /* adventage*/
   .adventage {
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -20,15 +9,33 @@
       padding: 40px;
     }
   }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 664px;
+    padding: 76px 118px;
+
+    &__arrowicon {
+      bottom: 28px;
+    }
+  }
+}
+@media all and (min-width: 1728px) {
+  /*footer*/
+  .footer {
+    padding: 131px 352px;
+    &__shop,
+    &__ours,
+    &__contact {
+      &--title {
+        font-size: 24px;
+      }
+      &--links {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 /*header*/
-
-@media all and (min-width: 900px) {
-}
-.header {
-  align-items: flex-start;
-}
-
-@media all and (min-width: 1728px) {
-}
