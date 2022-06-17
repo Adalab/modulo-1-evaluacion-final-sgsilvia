@@ -6,6 +6,7 @@
   background-image: url(../images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   &__menu {
     position: fixed;
@@ -17,11 +18,13 @@
 
   &__logo {
     padding-top: 19px;
+    margin-bottom: 100px;
   }
   &__section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     &--titleh1 {
       padding: 62px;
 
