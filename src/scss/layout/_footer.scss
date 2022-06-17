@@ -30,7 +30,7 @@
 
   &__contact {
     @include links;
-    margin-left: 50px;
+    width: 13ch;
 
     &--title {
       @include titleF;
@@ -41,7 +41,7 @@
     }
 
     &--icon {
-      font-size: 26px;
+      font-size: 24px;
       padding-top: 20px;
       padding-right: 7px;
     }
@@ -50,5 +50,7 @@
   &__arrowicon {
     font-size: 24px;
     color: $colorTextFooter;
+    position: absolute;
+    right: 28px;
   }
 }
