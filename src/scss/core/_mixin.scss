@@ -1,0 +1,50 @@
+/*aside*/
+@mixin titleh2 {
+  color: $colorTextBlue;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@mixin textaside {
+  text-align: center;
+  color: $colorTextBlue;
+  font-size: 14px;
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+/*footer*/
+@mixin titleF {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 12px;
+  color: $colorTextFooter;
+
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin links {
+  color: $colorTextFooter;
+  text-decoration: none;
+  size: 14px;
+  font-weight: normal;
+}
+@mixin container {
+  padding-bottom: 25px;
+}
+/*header*/
+@mixin titleh3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: $colorTextBlue;
+  padding-bottom: 12px;
+}
+@mixin maintext {
+  font-size: 16px;
+  font-weight: normal;
+  color: $colorTextBlue;
+}

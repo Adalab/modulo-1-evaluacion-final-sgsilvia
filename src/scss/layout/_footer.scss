@@ -1,30 +1,10 @@
-@mixin titleF {
-  font-size: 20px;
-  font-weight: 600;
-  padding-bottom: 12px;
-  color: $colorTextFooter;
-}
-
-@mixin links {
-  color: $colorTextFooter;
-  text-decoration: none;
-  size: 14px;
-  font-weight: normal;
-}
-@mixin container {
-  height: 96 px;
-  padding-bottom: 25px;
-}
-
 .footer {
-  padding-top: 56px;
+  padding: 56px 0;
 
   background-color: $colorfotterbackground;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 545px;
 
   &__shop {
     @include container;

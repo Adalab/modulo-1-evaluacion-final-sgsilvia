@@ -1,26 +1,12 @@
-@mixin titleh2 {
-  color: $colorTextBlue;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-@mixin textaside {
-  text-align: center;
-  color: $colorTextBlue;
-  font-size: 14px;
-  width: 70%;
-  padding-bottom: 30px;
-}
 .aside {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background-color: $colorfotterbackground;
   &__send {
     display: flex;
     flex-direction: column;
-    height: 352px;
+    padding-bottom: 63px;
+
     background-color: $colorSendBackground;
     width: 100%;
     align-items: center;
@@ -54,11 +40,11 @@
   &__enjoy {
     display: flex;
     flex-direction: column;
-    height: 339px;
-    background-color: $colorGreyBackground;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: $colorGreyBackground;
+    width: 100%;
+    padding: 90px 0;
 
     &--title {
       @include titleh2;
@@ -81,7 +67,6 @@
 
   &__container {
     width: 100%;
-    margin-bottom: 5px;
 
     &--foto {
       width: 100%;
