@@ -20,8 +20,7 @@
       bottom: 28px;
     }
   }
-}
-@media all and (min-width: 1728px) {
+
   /*footer*/
   .footer {
     padding: 131px 352px;
@@ -39,3 +38,17 @@
 }
 
 /*header*/
+@media all and (min-width: 1728px) {
+  //header
+
+  .header {
+    padding: 76px 280px;
+    &__nav {
+      &--list {
+        display: flex;
+        justify-content: space-around;
+        width: 424px;
+      }
+    }
+  }
+}
