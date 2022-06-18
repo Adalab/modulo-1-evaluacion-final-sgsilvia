@@ -7,47 +7,54 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   &__menu {
+    color: $colorfotterbackground;
     position: fixed;
-    left: 33px;
-    top: 55px;
-    color: black;
-    font-size: 24px;
+    margin: 55px 0 0 33px;
+    size: 24px;
   }
-
-  &__logo {
-    padding-top: 19px;
-    margin-bottom: 100px;
-  }
-  &__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &--titleh1 {
-      padding: 62px;
-
-      font-size: 24px;
-      color: $colorTextBlue;
-      font-weight: 600;
-    }
-
-    &--button {
-      width: 176px;
-      height: 48px;
-      background-color: $colorfotterbackground;
-      text-decoration: none;
-      text-align: center;
-      padding: 15px;
-      text-transform: capitalize;
-      font-weight: 600;
-      color: $colorTextWhite;
-      border: none;
-    }
-  }
-
-  &__nav--list {
+  &__titleh1 {
     display: none;
+  }
+}
+
+.box_1 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    display: none;
+  }
+  &__logo {
+    width: fit-content;
+    padding-top: 19px;
+  }
+}
+
+.box_2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__titleh2 {
+    @include bluetitleh2;
+  }
+
+  &__button {
+    margin-bottom: 64px;
+    &--link {
+      @include button;
+
+      &:hover {
+        @include linkButton;
+      }
+    }
   }
 }
