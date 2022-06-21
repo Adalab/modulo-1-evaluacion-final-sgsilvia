@@ -1,0 +1,34 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+
+  &__enjoy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorGreyBackground;
+
+    padding: 90px 0;
+    &--title {
+      @include titleh2;
+    }
+    &--text {
+      @include textaside;
+    }
+    &--button {
+      @include button;
+      &:hover {
+        @include linkButton;
+      }
+    }
+  }
+
+  &__container {
+    width: 100%;
+
+    &--foto {
+      width: 100%;
+    }
+  }
+}

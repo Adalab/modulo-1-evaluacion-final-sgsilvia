@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   &__menu {
     color: $colorfotterbackground;
     position: fixed;
@@ -19,7 +20,7 @@
 }
 
 .box_1 {
-  height: 50%;
+  height: 45%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -30,13 +31,13 @@
     display: none;
   }
   &__logo {
-    width: fit-content;
     padding-top: 19px;
+    size: 96px;
   }
 }
 
 .box_2 {
-  height: 50%;
+  height: 55%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -45,12 +46,14 @@
 
   &__titleh2 {
     @include bluetitleh2;
+    font-family: "Poppins", sans-serif;
   }
 
   &__button {
-    margin-bottom: 64px;
+    margin-bottom: 60%;
     &--link {
       @include button;
+      font-family: "Poppins", sans-serif;
 
       &:hover {
         @include linkButton;

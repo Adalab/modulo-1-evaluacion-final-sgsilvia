@@ -1,4 +1,29 @@
 @media all and (min-width: 900px) {
+  .header {
+    background-position: right;
+    &__menu {
+      margin: 75px 0 0 82px;
+    }
+  }
+  .box_1 {
+    &__logo {
+      padding-top: 39px;
+    }
+  }
+  .box_2 {
+    width: 50%;
+    margin-left: 147px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__titleh2 {
+      margin-bottom: 40px;
+      width: 20ch;
+      @include tabletBluetitleh2;
+      text-align: start;
+    }
+  }
+
   /* adventage*/
   .adventage {
     grid-template-columns: 1fr 1fr 1fr;
@@ -27,18 +52,47 @@
   //header
 
   .header {
-    padding: 76px 280px;
-    &__nav {
-      &--list {
-        display: flex;
-        justify-content: space-around;
-        width: 424px;
-      }
-    }
+    background-position: center;
     &__menu {
       display: none;
     }
   }
+
+  .box_1 {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 280px;
+    margin-right: 280px;
+
+    &__nav {
+      width: 50vw;
+      padding-top: 76px;
+      margin-right: -280px;
+
+      display: flex;
+      &--links {
+        @include navText;
+        text-decoration: none;
+      }
+      &__logo {
+        width: 50vw;
+      }
+    }
+  }
+  .box_2 {
+    margin-left: 290px;
+  }
+  /*aside_2*/
+  .aside {
+    flex-direction: row;
+    &__enjoy {
+      width: 50%;
+    }
+    &__container {
+      width: 50%;
+    }
+  }
+
   /*footer*/
   .footer {
     padding: 131px 352px;
