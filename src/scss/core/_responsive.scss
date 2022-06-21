@@ -42,7 +42,8 @@
     padding: 76px 118px;
 
     &__arrowicon {
-      bottom: 28px;
+      position: relative;
+      bottom: 20%;
     }
   }
 }
