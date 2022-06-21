@@ -34,6 +34,15 @@
       padding: 40px;
     }
   }
+  /*special*/
+  .special {
+    display: flex;
+    flex-direction: column;
+    &__container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 
   .footer {
     flex-direction: row;
@@ -42,8 +51,6 @@
     padding: 76px 118px;
 
     &__arrowicon {
-      position: relative;
-      bottom: 20%;
     }
   }
 }

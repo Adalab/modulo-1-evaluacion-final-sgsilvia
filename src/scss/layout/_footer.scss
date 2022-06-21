@@ -48,8 +48,9 @@
   }
 
   &__arrowicon {
+    display: block;
+    align-items: flex-start;
     font-size: 24px;
     color: $colorTextFooter;
-    position: absolute;
   }
 }

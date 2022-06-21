@@ -18,6 +18,7 @@
     }
     &--button {
       @include button;
+      box-sizing: border-box;
       &:hover {
         @include linkButton;
       }
